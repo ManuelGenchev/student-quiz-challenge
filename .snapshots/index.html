@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Quiz Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Quiz Challenge</h1>
+        <p>Test your knowledge and see how many questions you can answer!</p>
+
+        <div id="login-section">
+            <h2>Welcome!</h2>
+            <input type="text" id="username" placeholder="Enter your username">
+            <button id="login-btn">Start Quiz</button>
+        </div>
+
+        <div id="quiz-section" hidden>
+            <h2 id="welcome-message"></h2>
+            <p id="question-number"></p>
+            <h3 id="question">Loading question...</h3>
+            <div id="answers"></div>
+            <p id="score">Score: 0</p>
+        </div>
+
+        <div id="result-section" hidden>
+            <h2>Quiz Completed!</h2>
+            <p id="final-score"></p>
+            <button id="restart-btn">Play Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
